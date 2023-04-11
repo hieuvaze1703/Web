@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="../javascript/main.js"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Thanh Hiếu Pharmacy</title>
+</head>
+
+<body>
+  <header>
+    <div class="row" >
+        <div class="col-md-8">
+            <p class="nav-item">
+              <h1 style="text-align: center; color: #A52C2C">PHẦN MỀM QUẢN LÝ NHÀ THUỐC - QNH</h1>
+              <h2 style="text-align: center; text-decoration: underline;color: #1A610E">GIẢI PHÁP QUẢN LÝ NHÀ THUỐC</h2>
+              <h3 style="text-align: center; color: #0A9C2A">Theo tiêu chuẩn Bộ y tế</h3>
+            </p>
+        </div>
+        <div class="col-md-4" style="padding-top: 20px;">
+          <div class="btn-group btn-group-justified">
+              <div class="btn btn-lg">
+                <img src="../images/logo-green-cross-pharmacy-vector-6235717_636891222549580691.jpg" class="rounded" style="width: 30px; height: 30px"/>
+                <button type="button" class="btn btn-success rounded-pill" data-toggle="modal" data-target="#ModalGT">   Giới thiệu phần mềm   </button>
+              </div>
+              <div class="btn btn-lg">
+                <img src="../images/tải xuống.png" class="rounded" style="width: 30px; height: 30px"/>
+                <button type="button" class="btn btn-success rounded-pill" data-toggle="modal" data-target="#ModalDN">   Đăng nhập hệ thống   </button>
+              </div>
+          </div>
+        </div>
+    </div>
+</header>
+  <div class="default">
+    <div class="row" >
+      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <p class="nav-item">
+          <h1 style="text-align: center; color: #0B561B">NHÀ THUỐC THANH HIẾU</h1>
+          <h3 style="text-align: center; color:#000; margin-top: 60px; font-style: italic; font-weight: 700">Chuyên bán lẻ các loại thuốc, thuốc được kê theo đơn<br> Đảm bảo an toàn theo tiêu chuẩn Bộ y tế</h3>
+          <h3 style="color: #000; margin-top: 60px;" class="text-left">Hotline: 0123456789<br>Địa chỉ: Thanh Hiếu Pharmacy <br>&emsp;- 236 Hoàng Quốc Việt, Cổ Nhuế 1, Bắc Từ Liêm, Hà Nội</h3>
+        </p>
+      </div>
+    </div>
+  </div>
+ 
+
+ 
+  <div class="modal fade" id="ModalDN" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content" style="height: 370px">
+        <div class="modal-header" style="background-color: #b6edb8">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="color: #943211">ĐĂNG NHẬP HỆ THỐNG</h3>
+        </div>
+        <div class="modal-body">
+          <div class="form-login__group">
+            <h4>Tên đăng nhập:</h4>
+            <input type="text" class="form-login__input" placeholder="Tên đăng nhập">
+          </div>
+          <div class="form-login__group">
+            <h4>Mật khẩu:</h4>
+            <input type="password" class="form-login__input" placeholder="Mật khẩu">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="auth-form__controls">
+            <button class="btn btn-success">ĐĂNG NHẬP</button>
+            <button class="btn btn-danger" data-dismiss="modal">HỦY</button>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="modal fade" id="ModalGT" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #b6edb8">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title" style="color: #943211">GIỚI THIỆU HỆ THỐNG</h3>
+        </div>
+        <div class="modal-body">
+          <p>Đây là phần mềm quản lý bán thuốc dùng trong các nhà thuốc vừa và nhỏ, bảo đảm chất lượng đạt chuẩn theo quy định của bộ y tế</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal">ĐÓNG</button>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </div> 
+<!--  
+  <div class="form-login__container">
+    <div class="form-login">
+        <div class="header_form-login ">
+          <p style="text-align: center; color: #A52C2C; font-weight: 550; font-size: x-large; margin-top: 7px;">ĐĂNG NHẬP HỆ THỐNG</p>
+        </div>
+        <div class="form-login__group">
+          <p>Tên đăng nhập:</p>
+          <input type="text" class="form-login__input" placeholder="Tên đăng nhập">
+        </div>
+        <div class="form-login__group">
+          <p>Mật khẩu:</p>
+          <input type="password" class="form-login__input" placeholder="Mật khẩu">
+          </div>
+        </div>
+    <div class="auth-form__controls">
+      <button class="btn btn-success">ĐĂNG NHẬP</button>
+      <button class="btn btn-danger">HỦY</button>
+    </div>   
+  </div>  -->
+
+  <script>
+    $(document).ready(function(){
+      $('#eye').click(function(){
+          $(this).toggleClass('open');
+          $(this).children('i').toggleClass('fa-eye-slash fa-eye');
+          if($(this).hasClass('open')){
+              $(this).prev().attr('type', 'text');
+          }else{
+              $(this).prev().attr('type', 'password');
+          }
+      });
+    });
+  </script>
+</body>
+</html>
